@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flow Automation Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-overlay"></div>
+
+  <div class="container">
+    <div class="hero">
+      <h1>Flow <br>Automation <br>Studio</h1>
+      <p class="hero-subtext">Automating business workflows with AI so you save time and respond to clients instantly.</p>
+    </div>
+
+    <div class="main-content">
+      
+      <div class="services">
+        <div class="service glass-card">
+          <h3>AI Replies</h3>
+          <p>Respond to clients instantly with AI-powered messages.</p>
+        </div>
+        <div class="service glass-card">
+          <h3>CRM Flow</h3>
+          <p>Streamline operations and keep everything in sync.</p>
+        </div>
+        <div class="service glass-card">
+          <h3>Optimization</h3>
+          <p>Boost efficiency with smarter digital systems.</p>
+        </div>
+      </div>
+
+      <div class="about glass-card">
+        <h2>How we help</h2>
+        <p>We design end-to-end workflows that connect your tools, so you spend less time on repetitive tasks.</p>
+        <ul>
+          <li>Automatic client follow-ups and reminders.</li>
+          <li>Lead qualification directly into your CRM.</li>
+        </ul>
+      </div>
+
+      <div class="contact glass-card">
+        <form id="contact-form">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+          </div>
+          <textarea name="message" placeholder="Tell us about your tools (Gmail, HubSpot, etc.)" required></textarea>
+          <button type="submit">Send My Plan</button>
+          <div id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

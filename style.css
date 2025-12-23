@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #1e293b;
+  background-color: #f8fafc;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background Image with correct blending */
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  background: 
+    linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(224, 231, 255, 0.3) 100%),
+    url("https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=2070");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 60px;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Hero Section Styles */
+.hero {
+  flex: 0.8;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.hero-subtext {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.15rem;
+  font-weight: 500; /* Medium weight for better definition */
+  line-height: 1.6;
+  color: #1e293b; /* Darker slate for contrast */
+  max-width: 440px;
+  margin-top: 20px;
+  
+  /* The Fix: A subtle glass pill background */
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.4); 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-block; /* Wraps the background tightly around the text */
+  
+  /* Shadow for extra depth */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Main Content Layout */
+.main-content {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Glass Card Global Style */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Services and Hover Animations */
+.services {
+  display: flex;
+  gap: 15px;
+}
+
+.service {
+  flex: 1;
+  padding: 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.service:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+.service h3 {
+  color: #2563eb;
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.service p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* About/Contact Forms */
+.about, .contact { padding: 30px; }
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row { display: flex; gap: 15px; }
+
+input, textarea {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  background: #fff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: scale(1.02);
+}
+
+#form-status { margin-top: 10px; font-size: 0.9rem; font-weight: 500; }
