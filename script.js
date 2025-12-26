@@ -14,7 +14,7 @@ form.addEventListener('submit', async (e) => {
   };
 
   try {
-    const response = await fetch('https://branter.app.n8n.cloud/webhook/formData', {
+    const response = await fetch('https://branter.app.n8n.cloud/webhook-test/formData', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
