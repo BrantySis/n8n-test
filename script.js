@@ -17,7 +17,7 @@ form.addEventListener('submit', async (e) => {
     const response = await fetch('https://n8n.srv1168743.hstgr.cloud/webhook-test/contact-form', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(contact-form),
     });
 
     if (response.ok) {
